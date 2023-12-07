@@ -19,7 +19,7 @@ class Banda
             else return notas.Average(a => a.Nota);
         }
     }
-    public List<Album> Albuns => albuns;
+    public IEnumerable<Album> Albuns => albuns;
 
     public void AdicionarAlbum(Album album) 
     { 
@@ -36,7 +36,7 @@ class Banda
         Console.WriteLine($"Discografia da banda {Nome}");
         foreach (Album album in albuns)
         {
-            Console.WriteLine($"Álbum: {album.Nome} ({album.DuracaoTotal})");
+            Console.WriteLine($"Álbum: {album.Nome}  -> {album.Media} ({album.DuracaoTotal}segundos)");
         }
     }
 }

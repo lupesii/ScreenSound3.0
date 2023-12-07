@@ -13,6 +13,8 @@ namespace ScreenSound.Menus
             {
                 Banda banda = bandasRegistradas[nomeDaBanda];
                 Console.WriteLine($"\nA média da banda {nomeDaBanda} é {banda.Media}.");
+                Console.WriteLine($"\nA banda {nomeDaBanda} possui muitos albuns");
+                banda.ExibirDiscografia();
                 /**
                 * ESPAÇO RESERVADO PARA COMPLETAR A FUNÇÃO
                 */
