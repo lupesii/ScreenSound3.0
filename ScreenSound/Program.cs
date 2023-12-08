@@ -1,5 +1,6 @@
 ﻿using ScreenSound.Menus;
 using ScreenSound.Modelos;
+using OpenAI_API;
 
 Banda TheWeekEnd = new("The WeekEnd");
 TheWeekEnd.AdicionarNota(new Avaliacao(10));
